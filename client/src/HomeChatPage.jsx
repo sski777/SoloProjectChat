@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useReducer } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-const ROOTURL = 'http://localhost:8080'
+const ROOTURL = 'https://soloprojectchat.onrender.com'
 
 const ChatRoom = () => {
   const [message, setMessage] = useState('');
