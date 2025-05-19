@@ -1,7 +1,6 @@
 import express from 'express'
 import cors from 'cors'
 import helmet from 'helmet'
-import rateLimiter from 'express-rate-limiter'
 import RouteGetMessages from './Routes/AddMessags.js'
 import RouteDeleteMessages from './Routes/DeleteMessages.js';
 
@@ -24,14 +23,6 @@ server.use(cors({
   credentials: true, // Optional: if you are using cookies or sessions
 }));
 
-
-const limiter = rateLimiter({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 200, // Limit each IP to 100 requests per windowMs
-  message: 'Too many requests, please try again later.',
-});
-
-server.use(limiter); // add it as a middlewware function
 
 
 server.use('/getmessages', RouteGetMessages)
