@@ -20,8 +20,8 @@ const AuthStatusPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-100 to-orange-200 px-4">
       <div className="bg-white shadow-2xl rounded-3xl p-10 text-center max-w-lg w-full border border-orange-300">
-        <h1 className="text-4xl font-bold text-gray-800 mb-3">Welcome to Phoenix 🛍️</h1>
-        <p className="text-gray-600 mb-6">Please log in to access your account and cart.</p>
+        <h1 className="text-4xl font-bold text-gray-800 mb-3">Welcome to Chat Room 💬</h1>
+        <p className="text-gray-600 mb-6">Please log in to access your account and start messaging.</p>
         <button
           onClick={() =>
             loginWithRedirect({
