@@ -4,16 +4,7 @@ const ROOTURL = 'https://soloprojectchat.onrender.com'
 
 const ChatRoom = () => {
   const [message, setMessage] = useState('');
-  const [messages, setMessages] = useState([
-    { id: 1, sender: 'Alice', content: 'Hey there!' },
-    { id: 2, sender: 'You', content: 'Hi Alice!' },
-    { id: 3, sender: 'Ben', content: 'hi its me!' },
-    { id: 3, sender: 'Ben', content: 'hi its me!' },
-    { id: 1, sender: 'Alice', content: 'Hey there!' },
-    { id: 2, sender: 'You', content: 'Hi Alice!' },
-    { id: 3, sender: 'Ben', content: 'hi its me!' },
-    { id: 3, sender: 'Ben', content: 'hi its me!' }
-  ]);
+  const [messages, setMessages] = useState([]);
   
   const { user, logout } = useAuth0(); // ✅ added logout
 
