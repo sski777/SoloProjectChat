@@ -17,4 +17,10 @@ pool.connect()
   .then(() => console.log('✅ Connected to PostgreSQL!'))
   .catch((err) => console.error('❌ Database connection error:', err));
 
+const pgPromise = pool.connect();
+
+const p2 = pgPromise.then(() => console.log('✅ Connected to PostgreSQL!'))
+
+p2.catch((err) => console.error('❌ Database connection error:', err))
+
 export default pool;
